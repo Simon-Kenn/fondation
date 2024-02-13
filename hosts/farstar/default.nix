@@ -12,6 +12,7 @@
 			nixpkgs.enable = true;
 			nix.enable = true;
 			locale.enable = true;
+			console.enable = true;
 		};
 	};
 }
