@@ -1,9 +1,23 @@
-{ lib, pkgs, ...}:
+{ lib, pkgs, inputs, ...}:
 {
+	imports = [
+		inputs.impermanence.nixosModules.home-manager.impermanence
+	];
+
 	home = {
 		username = "simon";
 		homeDirectory = "/home/simon";
 		stateVersion = "24.05";
+
+		persistence = {
+			"/persist/home/simon" = {
+				directories = [
+					"Codes"
+					".ssh"
+				];
+				allowOther = true;
+			};
+		};
 	};
 
 	nixpkgs = {
