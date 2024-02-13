@@ -15,6 +15,7 @@
 			locale.enable = true;
 			console.enable = true;
 			base-packages.enable = true;
+			impermanence.enable = true;
 		};
 	};
 }
