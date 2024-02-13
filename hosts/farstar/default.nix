@@ -7,8 +7,11 @@
 	];
 
 	modules = {
-		system.systemd-boot = true;
-		nixpkgs.enable = true;
-		nix.enable = true;
+		system = {
+			systemd-boot = true;
+			nixpkgs.enable = true;
+			nix.enable = true;
+			locale.enable = true;
+		};
 	};
 }
