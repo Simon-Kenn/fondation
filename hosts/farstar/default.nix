@@ -4,6 +4,7 @@
 
 	imports = [
 		./hardware.nix
+		./disk.nix
 		../../users/simon
 	];
 
