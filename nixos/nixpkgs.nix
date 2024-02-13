@@ -3,7 +3,7 @@ with lib; let
 	cfg = config.modules.system.nixpkgs;
 in {
 
-options.modules.system.systemd-boot = {
+options.modules.system.nixpkgs = {
 		enable = mkEnableOption "Enable systemd boot";
 	};
 
