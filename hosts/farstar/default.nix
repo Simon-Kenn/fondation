@@ -16,6 +16,7 @@
 			locale.enable = true;
 			console.enable = true;
 			base-packages.enable = true;
+			ephemeral-btrfs.enable = true;
 			impermanence.enable = true;
 		};
 	};
