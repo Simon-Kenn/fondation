@@ -4,6 +4,7 @@
 
 	imports = [
 		./hardware.nix
+		../../users/simon
 	];
 
 	modules = {
@@ -13,6 +14,7 @@
 			nix.enable = true;
 			locale.enable = true;
 			console.enable = true;
+			base-packages.enable = true;
 		};
 	};
 }
