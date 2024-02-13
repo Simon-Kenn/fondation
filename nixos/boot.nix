@@ -1,8 +1,8 @@
-{ pkgs, lib, ...}:
+{ pkgs, config, lib, ...}:
 with lib; let 
-	cfg = config.modules.nixos.systemd-boot;
+	cfg = config.modules.system.systemd-boot;
 in {
-	options.modules.nixos.systemd-boot = {
+	options.modules.system.systemd-boot = {
 		enable = mkEnableOption "Enable systemd boot";
 	};
 

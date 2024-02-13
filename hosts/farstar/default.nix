@@ -3,10 +3,12 @@
 	system.stateVersion = "24.05";
 
 	imports = [
-
+		./hardware.nix
 	];
 
-	modules.nixos = {
-		systemd-boot.enable = true;
+	modules = {
+		system.systemd-boot = true;
+		nixpkgs.enable = true;
+		nix.enable = true;
 	};
 }
