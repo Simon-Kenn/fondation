@@ -3,5 +3,6 @@
 		./system
 		./security
 		./network
+		./shell
 	];
 }

@@ -10,7 +10,6 @@
 	];
 
 	modules = {
-
 		system = {
 			systemd-boot.enable = true;
 			nixpkgs.enable = true;
@@ -26,5 +25,6 @@
 			network-manager.enable = true;
 		};
 
+		shell.fish.enable = true;
 	};
 }
