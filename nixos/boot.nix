@@ -12,7 +12,7 @@ in {
 			loader = {
 				systemd-boot = {
 					enable = true;
-					consoloMode = "max";
+					consoleMode = "max";
 				};
 			};
 		};
