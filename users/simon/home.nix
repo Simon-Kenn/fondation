@@ -30,10 +30,12 @@
 		package = lib.mkDefault pkgs.nix;
 		settings = {
 			experimental-features = [ "nix-command" "flakes" "repl-flake"];
+			warn-dirty = false;
 		};
 	};
 
 	programs.home-manager.enable = true;
+	programs.git.enable = true;
 
-	systemd.user.startService = "sd-switch";
+	systemd.user.startServices = "sd-switch";
 }

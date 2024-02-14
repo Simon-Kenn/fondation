@@ -10,6 +10,7 @@
 	];
 
 	modules = {
+
 		system = {
 			systemd-boot.enable = true;
 			nixpkgs.enable = true;
@@ -19,7 +20,11 @@
 			base-packages.enable = true;
 			ephemeral-btrfs.enable = true;
 			impermanence.enable = true;
-			openssh.enable = true;
 		};
+
+		network = {
+			network-manager.enable = true;
+		};
+
 	};
 }

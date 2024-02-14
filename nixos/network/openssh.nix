@@ -1,10 +1,10 @@
 { lib, config, ...}:
 with lib; let 
-	cfg = config.modules.system.openssh;
+	cfg = config.modules.services.openssh;
 	hasOptinPersistence = config.environment.persistence ? "/persist";
 in {
 
-	options.modules.system.openssh = {
+	options.modules.services.openssh = {
 		enable = mkEnableOption "Enable systemd boot";
 	};
 
@@ -15,11 +15,6 @@ in {
 				PasswordAuthentication = false;
 				PermitRootLogin = "no";
 			};
-
-			hostKeys = [{
-				path = "${lib.optionalString hasOptinPersistence "/persist"}/etc/ssh/ssh_host_ed25519_key";
-				type = "ed25519";
-			}];
 		};
 	};
 }
