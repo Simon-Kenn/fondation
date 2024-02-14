@@ -6,6 +6,7 @@
 		./hardware.nix
 		./disk.nix
 		../../users/simon
+		../../nixos
 	];
 
 	modules = {
@@ -14,15 +15,11 @@
 			nixpkgs.enable = true;
 			nix.enable = true;
 			locale.enable = true;
-			#console.enable = true;
-			#base-packages.enable = true;
+			console.enable = true;
+			base-packages.enable = true;
 			ephemeral-btrfs.enable = true;
 			impermanence.enable = true;
 			openssh.enable = true;
-		};
-
-		nixos = {
-			ephemeral-btrfs.enable = true;
 		};
 	};
 }
