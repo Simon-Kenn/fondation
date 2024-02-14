@@ -3,7 +3,7 @@ with lib; let
 	cfg = config.modules.system.base-packages;
 in {
 
-options.modules.system.base-packages = {
+	options.modules.system.base-packages = {
 		enable = mkEnableOption "Enable minimal packages pack";
 	};
 

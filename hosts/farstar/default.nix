@@ -20,5 +20,9 @@
 			impermanence.enable = true;
 			openssh.enable = true;
 		};
+
+		nixos = {
+			ephemeral-btrfs.enable = true;
+		};
 	};
 }

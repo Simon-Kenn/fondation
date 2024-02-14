@@ -21,10 +21,10 @@ with lib; let
     )
   '';
   phase1Systemd = config.boot.initrd.systemd.enable;
-	cfg = config.modules.system.ephemeral-btrfs;
+	cfg = config.modules.nixos.ephemeral-btrfs;
 in
 {
-	options.modules.system.ephemeral-btrfs = {
+	options.modules.nixos.ephemeral-btrfs = {
 		enable = mkEnableOptions "Enable ephemeral btrfs";
 	};
 
