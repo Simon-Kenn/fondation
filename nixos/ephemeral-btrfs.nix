@@ -25,7 +25,7 @@ with lib; let
 in
 {
 	options.modules.system.ephemeral-btrfs = {
-		enable = mkEnableOptions "Enable ephemeral btrfs";
+		enable = mkEnableOption "Enable ephemeral btrfs";
 	};
 
 	config = mkIf cfg.enable {
