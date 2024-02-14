@@ -1,4 +1,4 @@
-{ config, lib, ...}:
+{ config, lib, inputs, ...}:
 with lib; let 
 	cfg = config.modules.system.impermanence;
 in {
