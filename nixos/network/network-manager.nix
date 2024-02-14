@@ -9,7 +9,7 @@ in {
 
 	config = mkIf cfg.enable {
 		networking = {
-			useDHCP = true;
+			useDHCP = lib.mkForce true;
 			networkmanager.enable = true;
 		};
 	};
