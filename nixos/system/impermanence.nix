@@ -21,7 +21,7 @@ in {
 		};
 		programs.fuse.userAllowOther = true;
 
-		system.activationsScripts.persistent-dirs.text = 
+		system.activationScripts.persistent-dirs.text = 
 		let
 			mkHomePersist = user: lib.optionalString user.createHome /* sh */ ''
 				mkdir -p /persist/${user.home}
