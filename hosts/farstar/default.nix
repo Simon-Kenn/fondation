@@ -11,7 +11,7 @@
 
 	modules = {
 		system = {
-			systemd-boot = true;
+			systemd-boot.enable = true;
 			nixpkgs.enable = true;
 			nix.enable = true;
 			locale.enable = true;
