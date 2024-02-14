@@ -8,7 +8,7 @@ options.modules.system.nixpkgs = {
 	};
 
 	config = mkIf cfg.enable {
-		nipkgs = {
+		nixpkgs = {
 			config = {
 				allowUnfree = true;
 			};
