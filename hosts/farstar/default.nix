@@ -18,6 +18,7 @@
 			base-packages.enable = true;
 			ephemeral-btrfs.enable = true;
 			impermanence.enable = true;
+			openssh.enable = true;
 		};
 	};
 }

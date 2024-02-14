@@ -8,6 +8,7 @@
 			shell = pkgs.fish;
 			extraGroups = ["wheel" "network" "git"];
 			packages = [ pkgs.home-manager ];
+			initialPassword = "password";
 			#hashedPasswordFile = 
 		};
 	};
