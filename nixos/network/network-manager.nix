@@ -3,7 +3,7 @@ with lib; let
 	cfg = config.modules.network.network-manager;
 in {
 
-	options.modules.network-manager = {
+	options.modules.network.network-manager = {
 		enable = mkEnableOption "Enable network-manager";
 	};
 
