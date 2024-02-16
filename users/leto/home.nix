@@ -2,7 +2,14 @@
 {
 	imports = [
 		inputs.impermanence.nixosModules.home-manager.impermanence
+		../../home-manager/default.nix
 	];
+
+	modules = {
+		security = {
+			gpg.enable = true;
+		};
+	};
 
 	home = {
 		username = "leto";
