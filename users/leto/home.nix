@@ -14,7 +14,7 @@
 	home = {
 		username = "leto";
 		homeDirectory = "/home/leto";
-		stateVersion = "24.05";
+		stateVersion = lib.mkDefault "24.05";
 
 		persistence = {
 			"/persist/home/leto" = {
