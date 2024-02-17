@@ -9,15 +9,18 @@
 		security = {
 			gpg.enable = true;
 		};
+		editors = {
+			nixvim.enable = true;
+		};
 	};
 
 	home = {
-		username = "leto";
-		homeDirectory = "/home/leto";
+		username = "simon";
+		homeDirectory = "/home/simon";
 		stateVersion = lib.mkDefault "24.05";
 
 		persistence = {
-			"/persist/home/leto" = {
+			"/persist/home/simon" = {
 				directories = [
 					"Codes"
 					".ssh"

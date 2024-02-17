@@ -5,7 +5,7 @@
 	imports = [
 		./hardware.nix
 		./disk.nix
-		../../users/leto
+		../../users/simon
 		../../nixos
 	];
 

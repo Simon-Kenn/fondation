@@ -38,8 +38,8 @@
 		};
 
 		homeConfigurations = {
-			"leto@farstar" = lib.homeManagerConfiguration {
-				modules = [ ./users/leto ];
+			"simon@farstar" = lib.homeManagerConfiguration {
+				modules = [ ./users/simon];
 				pkgs = nixpkgs.legacyPackages.x86_64-linux;	
 				extraSpecialArgs = { inherit inputs outputs; };
 			};

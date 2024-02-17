@@ -2,7 +2,7 @@
 {
 	imports = [ inputs.home-manager.nixosModules.home-manager ];
 
-	users.users.leto = {
+	users.users.simon = {
 		isNormalUser = true;
 		shell = pkgs.fish;
 		extraGroups = ["wheel" "network" "git"];
@@ -12,7 +12,7 @@
 	};
 
 	home-manager = {
-		users.leto = import ./home.nix;
+		users.simon = import ./home.nix;
 		extraSpecialArgs = { inherit inputs outputs; };
 	};
 }

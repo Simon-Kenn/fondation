@@ -1,5 +1,6 @@
 {
 	imports = [
 		./gpg.nix
+		./nixvim
 	];
 }
