@@ -20,7 +20,7 @@ in {
   ];
 
 	options.modules.editors.nvim = {
-		enable = mkEnableOptions "enable neovim editor";
+		enable = mkEnableOption "enable neovim editor";
 	};
 
 	config = mkIf cfg.enable {
