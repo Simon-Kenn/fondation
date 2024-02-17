@@ -15,12 +15,12 @@
 	};
 
 	home = {
-		username = "simon";
-		homeDirectory = "/home/simon";
+		username = "leto";
+		homeDirectory = "/home/leto";
 		stateVersion = lib.mkDefault "24.05";
 
 		persistence = {
-			"/persist/home/simon" = {
+			"/persist/home/leto" = {
 				directories = [
 					"Codes"
 					".ssh"
