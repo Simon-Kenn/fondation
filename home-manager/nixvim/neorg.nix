@@ -1,7 +1,4 @@
  {pkgs, ...}:{ 
-	programs.nixvim.extraPlugins = with pkgs; [
-		neorg-extra-plugins.neorg-templates
-	];
 	programs.nixvim.plugins = {
 		neorg = {
       enable = true;
@@ -47,7 +44,6 @@
 
         "core.integrations.telescope" = {__empty = null;};
 				"core.integrations.nvim-cmp" = {__empty = null;};
-				"external.templates" = {__empty = null;};
       };
     };
   };
