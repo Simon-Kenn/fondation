@@ -5,10 +5,10 @@
   ...
 }:
 with lib; let
-	cfg = config.modules.editors.nixvim;
+	cfg = config.modules.editors.nvim;
 in {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeManagerModules.nvim
 		./options.nix
 		./vbepo.nix
 		./keymaps.nix

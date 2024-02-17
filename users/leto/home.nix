@@ -10,7 +10,7 @@
 			gpg.enable = true;
 		};
 		editors = {
-			nixvim.enable = true;
+			nvim.enable = true;
 		};
 	};
 
