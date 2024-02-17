@@ -17,7 +17,7 @@
 		};
 
 		nixvim.url = "github:nix-community/nixvim";
-		neorg-overlay.url = "github:nvim-neorg/nixkpgs-neorg-overlay";
+		neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
 		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 
 		sops-nix = {
