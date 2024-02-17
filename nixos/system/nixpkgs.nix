@@ -1,4 +1,4 @@
-{ lib, config, ...}:
+{ lib, config, outputs, ...}:
 with lib; let 
 	cfg = config.modules.system.nixpkgs;
 in {
@@ -12,6 +12,7 @@ options.modules.system.nixpkgs = {
 			config = {
 				allowUnfree = true;
 			};
+			overlays = builtins.attrValues outputs.overlays;
 		};
 	};
 }

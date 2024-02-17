@@ -40,12 +40,10 @@
 		inherit (self) outputs;
 	
 		lib = nixpkgs.lib // home-manager.lib;
-		overlays = [
-			inputs.neorg-overlay.overlays.default
-			inputs.neovim-nightly-overlay.overlay
-		];
 	in {
 		inherit lib;
+
+		overlays = import ./overlays { inherit inputs; };
 
 		nixosConfigurations = {
 				farstar = lib.nixosSystem {
