@@ -8,7 +8,7 @@ with lib; let
 	cfg = config.modules.editors.nvim;
 in {
   imports = [
-    inputs.nixvim.homeManagerModules.nvim
+    inputs.nixvim.homeManagerModules.nixvim
 		./options.nix
 		./vbepo.nix
 		./keymaps.nix
