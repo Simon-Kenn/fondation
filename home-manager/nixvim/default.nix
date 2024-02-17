@@ -19,7 +19,7 @@ in {
 		./neorg.nix
   ];
 
-	options.modules.editors.nixvim = {
+	options.modules.editors.nvim = {
 		enable = mkEnableOptions "enable neovim editor";
 	};
 
