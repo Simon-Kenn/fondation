@@ -13,11 +13,11 @@ in {
 		./options.nix
 		./vbepo.nix
 		./keymaps.nix
-		./ui.nix
-		./ux.nix
-		./langage.nix
-		./completion.nix
-		./neorg.nix
+		#./ui.nix
+		#./ux.nix
+		#./langage.nix
+		#./completion.nix
+		#./neorg.nix
   ];
 
 	options.modules.editors.nvim = {
