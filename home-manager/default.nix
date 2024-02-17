@@ -1,6 +1,5 @@
 {
 	imports = [
-		./gpg.nix
-		./nixvim
+		./security/gpg.nix
 	];
 }
