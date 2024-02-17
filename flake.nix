@@ -16,7 +16,10 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		nixvim.url = "github:nix-community/nixvim";
+		nixvim = {
+			url = "github:nix-community/nixvim";
+			inputs.nixpkgs.follows = "nixkpgs";
+		};
 		neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
 		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 
@@ -31,7 +34,8 @@
     nixpkgs,
 		home-manager,
     ...
-  } @inputs: let
+  } @inputs: 
+	let
 		inherit (self) outputs;
 	
 		lib = nixpkgs.lib // home-manager.lib;
