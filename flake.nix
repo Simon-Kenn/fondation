@@ -15,6 +15,15 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		nixvim.url = "github:nix-community/nixvim";
+		neorg-overlay.url = "github:nvim-neorg/nixkpgs-neorg-overlay";
+		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+		sops-nix = {
+			url = "github:Mix92/sops-nix";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
   };
 
   outputs = {
@@ -26,6 +35,10 @@
 		inherit (self) outputs;
 	
 		lib = nixpkgs.lib // home-manager.lib;
+		overlays = [
+			inputs.neorg-overlay.overlays.default
+			inputs.neovim-nightly-overlay.overlay
+		];
 	in {
 		inherit lib;
 
@@ -41,7 +54,7 @@
 			"leto@farstar" = lib.homeManagerConfiguration {
 				modules = [ ./users/leto];
 				pkgs = nixpkgs.legacyPackages.x86_64-linux;	
-				extraSpecialArgs = { inherit inputs outputs; };
+				extraSpecialArgs = { inherit inputs outputs overlays; };
 			};
 		};
   };
