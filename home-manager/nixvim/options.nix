@@ -1,4 +1,4 @@
-{ host, ...}:{
+{
   programs.nixvim = {
 		globals = {
 			mapleader = " ";
@@ -33,7 +33,7 @@
 
 			swapfile = false;
 			backup = false;
-			undodir = "${host.path}/.vim/undodir";
+			undodir = "leto/.vim/undodir";
 			undofile = true;
 
 			hlsearch = false;

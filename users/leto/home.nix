@@ -24,6 +24,7 @@
 				directories = [
 					"Codes"
 					".ssh"
+					".vim"
 				];
 				allowOther = true;
 			};
