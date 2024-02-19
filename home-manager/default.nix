@@ -1,7 +1,7 @@
 {
 	imports = [
-		./security/gpg.nix
-		./editors/nvim
-		./editors/vim
+		./system
+		./security
+		./editors
 	];
 }
