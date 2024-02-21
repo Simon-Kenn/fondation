@@ -11,7 +11,10 @@
 				tsserver.enable = true;
 				eslint.enable = true;
 				jsonls.enable = true;
-				rust-analyzer.enable = true;
+				rust-analyzer = {
+					enable = true;
+					installCargo = true;
+				};
 				texlab.enable = true;
 				vuels.enable = true;
 				bashls.enable = true;
