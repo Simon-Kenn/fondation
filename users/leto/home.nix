@@ -20,8 +20,8 @@
 			gpg.enable = true;
 		};
 		editors = {
-			#nvim.enable = true;
-			vim.enable = true;
+			nvim.enable = true;
+			#vim.enable = true;
 		};
 	};
 
