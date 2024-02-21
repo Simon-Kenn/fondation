@@ -1,0 +1,12 @@
+layout  {
+	tab
+	tab {
+		pane
+		pane
+		pane
+	}
+	tab name="3" {
+		pane
+		pane
+	}
+}

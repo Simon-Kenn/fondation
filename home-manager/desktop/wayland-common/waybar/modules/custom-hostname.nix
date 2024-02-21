@@ -1,0 +1,3 @@
+{
+  exec = "echo $USER@$HOSTNAME";
+}

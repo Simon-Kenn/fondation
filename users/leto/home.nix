@@ -2,6 +2,8 @@
 {
 	imports = [
 		../../home-manager/default.nix
+		../../home-manager/cli/default.nix
+		../../home-manager/desktop/default.nix
 	];
 
 	home = {
