@@ -11,6 +11,13 @@ in {
 	imports = [
 		inputs.nixvim.homeManagerModules.nixvim
 		./vbepo.nix
+		./keymaps.nix
+		./options.nix
+		./ui.nix
+		./ux.nix
+		./completion.nix
+		./langage.nix
+		./neorg.nix
 	];
 
 	options.modules.editors.nvim = {
