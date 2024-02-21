@@ -1,4 +1,4 @@
-{ host, ...}:{
+{
   programs.nixvim = {
 		globals = {
 			mapleader = " ";
@@ -33,6 +33,7 @@
 
 			swapfile = false;
 			backup = false;
+# TODO: should not be hardcoded
 			undodir = "/home/leto/.vim/undodir";
 			undofile = true;
 
