@@ -25,6 +25,16 @@
 		neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
 		neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 
+		hyprwm-contrib = {
+			url = "github:hyprwm/contrib";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
+		firefox-addons = {
+			url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addions";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
 		sops-nix = {
 			url = "github:Mic92/sops-nix";
 			inputs.nixpkgs.follows = "nixpkgs";
