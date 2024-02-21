@@ -33,7 +33,7 @@
 
 			swapfile = false;
 			backup = false;
-			undodir = "${host.path}/.vim/undodir";
+			undodir = "/home/leto/.vim/undodir";
 			undofile = true;
 
 			hlsearch = false;
