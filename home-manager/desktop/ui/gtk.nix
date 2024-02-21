@@ -28,4 +28,8 @@ in {
       name = "Catppuccin-Mocha-Dark-Cursors";
     };
   };
+
+	home.packages = with pkgs; [
+		dconf
+	];
 }
